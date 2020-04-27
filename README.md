@@ -47,7 +47,7 @@ Click either of those to see a live demo (at bottom of page).
 ## Installation
 
 ```
-npm i @devboldly/react-use-scroll
+npm i react-use-window-scroll
 ```
 
 ## Quick Start
@@ -56,7 +56,7 @@ npm i @devboldly/react-use-scroll
 
 ```jsx
 import * as React from 'react';
-import { useScrollBy } from '@devboldly/react-use-scroll';
+import { useScrollBy } from 'react-use-window-scroll';
 
 const HookExample = () => {
   const scrollBy = useScrollBy();
@@ -78,7 +78,7 @@ Read full [useScrollBy docs](https://devboldly.github.io/react-use-scroll/useScr
 
 ```jsx
 import * as React from 'react';
-import { useScrollTo } from '@devboldly/react-use-scroll';
+import { useScrollTo } from 'react-use-window-scroll';
 
 const HookExample = () => {
   const scrollTo = useScrollTo();
