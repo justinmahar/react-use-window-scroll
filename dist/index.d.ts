@@ -1,2 +1,2 @@
-export * from './components/ExampleComponent';
-export * from './hooks/useExample';
+export * from './hooks/useScrollTo';
+export * from './hooks/useScrollBy';

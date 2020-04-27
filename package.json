@@ -1,9 +1,9 @@
 {
-  "name": "@devboldly/react-library-starter",
-  "version": "1.0.0",
+  "name": "@devboldly/react-use-scroll",
+  "version": "1.0.7",
   "author": "Dev Boldly <devboldly@gmail.com>",
-  "description": "A template to build, test, and share React components and hooks easily. Uses Storybook, Jest, and more.",
-  "homepage": "https://github.com/devboldly/react-library-starter#readme",
+  "description": "React hooks for scrolling the page to any location, or by any amount. Supports smooth scrolling.",
+  "homepage": "https://github.com/devboldly/react-use-scroll#readme",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
@@ -27,13 +27,15 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/devboldly/react-library-starter.git"
+    "url": "git+https://github.com/devboldly/react-use-scroll.git"
   },
   "bugs": {
-    "url": "https://github.com/devboldly/react-library-starter/issues"
+    "url": "https://github.com/devboldly/react-use-scroll/issues"
   },
   "keywords": [],
-  "dependencies": {},
+  "dependencies": {
+    "smoothscroll-polyfill": "^0.4.4"
+  },
   "peerDependencies": {
     "react": "^16.13.0",
     "react-dom": "^16.13.0"
@@ -51,6 +53,7 @@
     "@types/node": "^13.9.0",
     "@types/react": "^16.9.23",
     "@types/react-dom": "^16.9.5",
+    "@types/smoothscroll-polyfill": "^0.3.1",
     "@types/webpack": "^4.41.12",
     "@typescript-eslint/eslint-plugin": "^2.23.0",
     "babel-loader": "^8.0.6",

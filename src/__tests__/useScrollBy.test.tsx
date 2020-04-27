@@ -1,12 +1,12 @@
 import { renderHook } from '@testing-library/react-hooks';
-import { useExample } from '../hooks/useExample';
+import { useScrollBy } from '../hooks/useScrollBy';
 
 // Learn how to test React hooks:
 // https://react-hooks-testing-library.com/
 
-describe('useExample Hook', () => {
+describe('useScrollBy Hook', () => {
   test('should run without crashing', () => {
-    const { result } = renderHook(() => useExample('Example text'));
+    const { result } = renderHook(() => useScrollBy());
     expect(result.error).toBe(undefined);
   });
 });

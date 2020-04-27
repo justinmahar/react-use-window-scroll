@@ -16,45 +16,91 @@ import githubSvg from '../__docz__/images/github.svg';
 	alignItems: 'center',
 }}>
   <div>
-    <h1>React Library Starter</h1>
+    <h1>React Use Scroll</h1>
   </div>
   <div>
-    <a href="https://github.com/devboldly/react-library-starter" target="_blank" rel="noopener noreferrer">
+    <a href="https://github.com/devboldly/react-use-scroll/" target="_blank" rel="noopener noreferrer">
       <SvgIcon src={githubSvg} size={28} style={{ margin: '0 0 0 20px' }} />
     </a>
   </div>
 </div>
 
-**This header will contain a brief description of the project.**
+**React hooks for scrolling the page to any location, or by any amount. Supports smooth scrolling.**
 
 👁️ **[Live Demo](/ExampleComponent#example)**
 
 ## Overview
 
-This section will contain an overview so people can have a high-level understanding of the project.
+This package includes two hooks for scrolling the page to any coordinates, or by any amount. They both use the the [Window Web API](https://developer.mozilla.org/en-US/docs/Web/API/Window)'s scroll functions and support using [ScrollToOptions](https://developer.mozilla.org/en-US/docs/Web/API/ScrollToOptions) for smooth scrolling implemented natively by the browser.
+
+- [useScrollBy](/useScrollBy) - Returns a function to scroll the page up or down by any amount, in pixels. Supports smooth scrolling.
+- [useScrollTo](/useScrollTo) - Returns a function to scroll the page to any page coordinates, in pixels. Supports smooth scrolling.
+
+Click either of those to see a live demo (at bottom of page).
 
 ### Features include:
 
-- **🚀 List your features, use fun [emojis](https://emojipedia.org/search/?q=rocket)**
-  - Give a little more info on each feature or mention benefits.
+- **🎯 Scroll the page to any pixel coordinates, or by any pixel amount**
+  - Easily send your viewer to any location on the page. Great for scrolling to the top on first render, or smoothly sending to the top when reaching the bottom.
+- **😎 Native smooth scrolling support**
+  - Supports browser-native smooth scrolling by specifying [ScrollToOptions](https://developer.mozilla.org/en-US/docs/Web/API/ScrollToOptions).
+- **🧮 Legacy browser support**
+  - Includes polyfill to support browsers that lack native smooth scrolling support (I'm looking at you, Safari!)
+- **🔽 Low overhead**
+  - Uses browser-provided [Window.scrollTo](https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollTo) and [Window.scrollBy](https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollBy) functions only—even for smooth scrolling.
+- **🛡️ Safely access the [Window Web API](https://developer.mozilla.org/en-US/docs/Web/API/Window)**
+  - Accessing `window` haphazardly in React is considered sloppy. These hooks follow the React paradigm of containing side-effects.
 
 ## Installation
 
 ```
-npm i @devboldly/react-library-starter
+npm i @devboldly/react-use-scroll
 ```
 
 ## Quick Start
 
-This section will contain a copy/paste example so people can get started quickly.
+### useScrollBy
 
 ```jsx
-import { ExampleComponent } from '@devboldly/react-library-starter';
+import * as React from 'react';
+import { useScrollBy } from '@devboldly/react-use-scroll';
+
+const HookExample = () => {
+  const scrollBy = useScrollBy();
+  return (
+    <div>
+      {/* Hard scroll down by 200 pixels */}
+      <button onClick={() => scrollBy(200, 0)}>Hard Scroll By 200</button>
+      {/* Smooth scroll down by 200 pixels */}
+      <button onClick={() => scrollBy({ top: 200, left: 0, behavior: 'smooth' })}>Smooth Scroll By 200</button>{' '}
+      ...
+    </div>
+  );
+};
 ```
 
+Read full [useScrollBy docs](/useScrollBy).
+
+### useScrollTo
+
 ```jsx
-<ExampleComponent text="Example Component"/>
+import * as React from 'react';
+import { useScrollTo } from '@devboldly/react-use-scroll';
+
+const HookExample = () => {
+  const scrollTo = useScrollTo();
+  return (
+    <div style={{ border: 'solid 2px #67788a', padding: '20px' }}>
+      {/* Hard scroll to the top */}
+      <button onClick={() => scrollTo(0, 0)}>Hard Scroll To Top (0, 0)</button>{' '}
+      {/* Smooth scroll to the top */}
+      <button onClick={() => scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>Smooth Scroll To Top (0, 0)</button>
+    </div>
+  );
+};
 ```
+
+Read full [useScrollTo docs](/useScrollTo).
 
 ## TypeScript
 
@@ -68,6 +114,6 @@ For major changes, open an issue first to discuss what you'd like to change.
 
 See the [library template](https://tinyurl.com/ya3k258d) for npm script documentation.
 
-## ⭐ Found It Helpful? [Star It!](https://github.com/devboldly/react-library-starter/stargazers)
+## ⭐ Found It Helpful? [Star It!](https://github.com/devboldly/react-use-scroll/stargazers)
 
-If you found this project helpful, let the community know by giving it a [star](https://github.com/devboldly/react-library-starter/stargazers): [👉⭐](https://github.com/devboldly/react-library-starter/stargazers)
+If you found this project helpful, let the community know by giving it a [star](https://github.com/devboldly/react-use-scroll/stargazers): [👉⭐](https://github.com/devboldly/react-use-scroll/stargazers)
