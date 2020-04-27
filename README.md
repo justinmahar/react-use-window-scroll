@@ -1,5 +1,5 @@
 <h2 align="center">
-  <a href="https://github.com/devboldly/react-use-scroll">React Use Scroll</a>
+  <a href="https://github.com/devboldly/react-use-scroll">React Use Window Scroll</a>
 </h2>
 <h3 align="center">
   React hooks for scrolling the page to any location, or by any amount.<br/>Supports smooth scrolling.
