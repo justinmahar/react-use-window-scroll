@@ -18,16 +18,16 @@
 
 ## Documentation
 
-Read the **[official documentation](https://react-use-scroll.netlify.app/)**.
+Read the **[official documentation](https://devboldly.github.io/react-use-scroll/)**.
 
-👁️ **[Live Demo](https://devboldly.github.io/react-use-scroll/ExampleComponent#example)**
+👁️ **[Live Demo](https://devboldly.github.io/react-use-scroll/useScrollTo#hook-example)**
 
 ## Overview
 
 This package includes two hooks for scrolling the page to any coordinates, or by any amount. They both use the the [Window Web API](https://developer.mozilla.org/en-US/docs/Web/API/Window)'s scroll functions and support using [ScrollToOptions](https://developer.mozilla.org/en-US/docs/Web/API/ScrollToOptions) for smooth scrolling implemented natively by the browser.
 
-- [useScrollBy](https://react-use-scroll.netlify.app/useScrollBy) - Returns a function to scroll the page up or down by any amount, in pixels. Supports smooth scrolling.
-- [useScrollTo](https://react-use-scroll.netlify.app/useScrollTo) - Returns a function to scroll the page to any page coordinates, in pixels. Supports smooth scrolling.
+- [useScrollBy](https://devboldly.github.io/react-use-scroll/useScrollBy) - Returns a function to scroll the page up or down by any amount, in pixels. Supports smooth scrolling.
+- [useScrollTo](https://devboldly.github.io/react-use-scroll/useScrollTo) - Returns a function to scroll the page to any page coordinates, in pixels. Supports smooth scrolling.
 
 Click either of those to see a live demo (at bottom of page).
 
@@ -72,7 +72,7 @@ const HookExample = () => {
 };
 ```
 
-Read full [useScrollBy docs](https://react-use-scroll.netlify.app/useScrollBy).
+Read full [useScrollBy docs](https://devboldly.github.io/react-use-scroll/useScrollBy).
 
 ### useScrollTo
 
@@ -93,7 +93,7 @@ const HookExample = () => {
 };
 ```
 
-Read full [useScrollTo docs](https://react-use-scroll.netlify.app/useScrollTo).
+Read full [useScrollTo docs](https://devboldly.github.io/react-use-scroll/useScrollTo).
 
 ## TypeScript
 

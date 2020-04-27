@@ -1,5 +1,5 @@
 /**
- * Documentation: https://react-use-scroll.netlify.app/useScrollBy
+ * Documentation: https://devboldly.github.io/react-use-scroll/useScrollBy
  *
  * This hook scrolls the page by the specified vertical and horizontal amount by using the Window Web API's Window.scrollBy function.
  * Smooth scrolling behavior (native to the browser) is supported by providing ScrollToOptions.
