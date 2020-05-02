@@ -77,7 +77,6 @@ Read full [useScrollBy docs](https://devboldly.github.io/react-use-window-scroll
 ### useScrollTo
 
 ```jsx
-import * as React from 'react';
 import { useScrollTo } from 'react-use-window-scroll';
 
 const HookExample = () => {
