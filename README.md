@@ -1,33 +1,33 @@
 <h2 align="center">
-  <a href="https://github.com/devboldly/react-use-scroll">React Use Window Scroll</a>
+  <a href="https://github.com/devboldly/react-use-window-scroll">React Use Window Scroll</a>
 </h2>
 <h3 align="center">
   React hooks for scrolling the page to any location, or by any amount.<br/>Supports smooth scrolling.
 </h3>
 <p align="center">
-  <a href="https://badge.fury.io/js/%40devboldly%2Freact-use-scroll">
-    <img src="https://badge.fury.io/js/%40devboldly%2Freact-use-scroll.svg" alt="npm Version"/>
+  <a href="https://badge.fury.io/js/%40devboldly%2Freact-use-window-scroll">
+    <img src="https://badge.fury.io/js/%40devboldly%2Freact-use-window-scroll.svg" alt="npm Version"/>
   </a>
-  <a href="https://github.com/devboldly/react-use-scroll/actions?query=workflow%3ATests">
-    <img src="https://github.com/devboldly/react-use-scroll/workflows/Tests/badge.svg" alt="Tests Status"/>
+  <a href="https://github.com/devboldly/react-use-window-scroll/actions?query=workflow%3ATests">
+    <img src="https://github.com/devboldly/react-use-window-scroll/workflows/Tests/badge.svg" alt="Tests Status"/>
   </a>
-  <a href="https://github.com/devboldly/react-use-scroll/actions?query=workflow%3ADeploy">
-    <img src="https://github.com/devboldly/react-use-scroll/workflows/Deploy/badge.svg" alt="Deploy Status"/>
+  <a href="https://github.com/devboldly/react-use-window-scroll/actions?query=workflow%3ADeploy">
+    <img src="https://github.com/devboldly/react-use-window-scroll/workflows/Deploy/badge.svg" alt="Deploy Status"/>
   </a>
 </p>
 
 ## Documentation
 
-Read the **[official documentation](https://devboldly.github.io/react-use-scroll/)**.
+Read the **[official documentation](https://devboldly.github.io/react-use-window-scroll/)**.
 
-👁️ **[Live Demo](https://devboldly.github.io/react-use-scroll/useScrollTo#hook-example)**
+👁️ **[Live Demo](https://devboldly.github.io/react-use-window-scroll/useScrollTo#hook-example)**
 
 ## Overview
 
 This package includes two hooks for scrolling the page to any coordinates, or by any amount. They both use the the [Window Web API](https://developer.mozilla.org/en-US/docs/Web/API/Window)'s scroll functions and support using [ScrollToOptions](https://developer.mozilla.org/en-US/docs/Web/API/ScrollToOptions) for smooth scrolling implemented natively by the browser.
 
-- [useScrollBy](https://devboldly.github.io/react-use-scroll/useScrollBy) - Returns a function to scroll the page up or down by any amount, in pixels. Supports smooth scrolling.
-- [useScrollTo](https://devboldly.github.io/react-use-scroll/useScrollTo) - Returns a function to scroll the page to any page coordinates, in pixels. Supports smooth scrolling.
+- [useScrollBy](https://devboldly.github.io/react-use-window-scroll/useScrollBy) - Returns a function to scroll the page up or down by any amount, in pixels. Supports smooth scrolling.
+- [useScrollTo](https://devboldly.github.io/react-use-window-scroll/useScrollTo) - Returns a function to scroll the page to any page coordinates, in pixels. Supports smooth scrolling.
 
 Click either of those to see a live demo (at bottom of page).
 
@@ -72,7 +72,7 @@ const HookExample = () => {
 };
 ```
 
-Read full [useScrollBy docs](https://devboldly.github.io/react-use-scroll/useScrollBy).
+Read full [useScrollBy docs](https://devboldly.github.io/react-use-window-scroll/useScrollBy).
 
 ### useScrollTo
 
@@ -93,7 +93,7 @@ const HookExample = () => {
 };
 ```
 
-Read full [useScrollTo docs](https://devboldly.github.io/react-use-scroll/useScrollTo).
+Read full [useScrollTo docs](https://devboldly.github.io/react-use-window-scroll/useScrollTo).
 
 ## TypeScript
 
@@ -111,9 +111,9 @@ For major changes, open an issue first to discuss what you'd like to change.
 
 See the [library template](https://tinyurl.com/ya3k258d) for npm script documentation.
 
-## ⭐ Found It Helpful? [Star It!](https://github.com/devboldly/react-use-scroll/stargazers)
+## ⭐ Found It Helpful? [Star It!](https://github.com/devboldly/react-use-window-scroll/stargazers)
 
-If you found this project helpful, let the community know by giving it a [star](https://github.com/devboldly/react-use-scroll/stargazers): [👉⭐](https://github.com/devboldly/react-use-scroll/stargazers)
+If you found this project helpful, let the community know by giving it a [star](https://github.com/devboldly/react-use-window-scroll/stargazers): [👉⭐](https://github.com/devboldly/react-use-window-scroll/stargazers)
 
 ## Logo Attribution
 

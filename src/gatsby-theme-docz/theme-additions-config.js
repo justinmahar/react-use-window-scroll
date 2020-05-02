@@ -1,5 +1,5 @@
 /** Name of your repository */
-const repoName = 'react-use-scroll';
+const repoName = 'react-use-window-scroll';
 /** URL to public assets such as images */
 const publicUrl = `/${repoName}/public`;
 

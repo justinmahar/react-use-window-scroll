@@ -3,7 +3,7 @@
   "version": "1.0.8",
   "author": "Dev Boldly <devboldly@gmail.com>",
   "description": "React hooks for scrolling the page to any location, or by any amount. Supports smooth scrolling.",
-  "homepage": "https://github.com/devboldly/react-use-scroll#readme",
+  "homepage": "https://github.com/devboldly/react-use-window-scroll#readme",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
@@ -27,10 +27,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/devboldly/react-use-scroll.git"
+    "url": "git+https://github.com/devboldly/react-use-window-scroll.git"
   },
   "bugs": {
-    "url": "https://github.com/devboldly/react-use-scroll/issues"
+    "url": "https://github.com/devboldly/react-use-window-scroll/issues"
   },
   "keywords": [],
   "dependencies": {
