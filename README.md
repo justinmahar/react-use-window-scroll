@@ -5,8 +5,8 @@
   React hooks for scrolling the page to any location, or by any amount.<br/>Supports smooth scrolling.
 </h3>
 <p align="center">
-  <a href="https://badge.fury.io/js/%40devboldly%2Freact-use-window-scroll">
-    <img src="https://badge.fury.io/js/%40devboldly%2Freact-use-window-scroll.svg" alt="npm Version"/>
+  <a href="https://badge.fury.io/js/react-use-window-scroll">
+    <img src="https://badge.fury.io/js/react-use-window-scroll.svg" alt="npm Version"/>
   </a>
   <a href="https://github.com/devboldly/react-use-window-scroll/actions?query=workflow%3ATests">
     <img src="https://github.com/devboldly/react-use-window-scroll/workflows/Tests/badge.svg" alt="Tests Status"/>
