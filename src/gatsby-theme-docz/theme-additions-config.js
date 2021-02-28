@@ -43,7 +43,7 @@ export const themeAdditionsConfig = {
   },
   feedbackForm: {
     /** Set to false to disable "was this page helpful?" feedback forms for whole site. */
-    enabled: true,
+    enabled: false,
     /** Site name submitted along with form, so you can track multiple sites with one form. Not shown to user. */
     siteName: repoName,
     /**
