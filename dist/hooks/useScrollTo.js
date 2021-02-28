@@ -24,7 +24,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var React = __importStar(require("react"));
 var smoothscroll_polyfill_1 = __importDefault(require("smoothscroll-polyfill"));
 /**
- * See documentation: [useScrollTo](https://devboldly.github.io/react-use-window-scroll/useScrollTo)
+ * See documentation: [useScrollTo](https://justinmahar.github.io/react-use-window-scroll/useScrollTo)
  *
  * This hook scrolls the page to the specified page coordinates using the Window Web API's Window.scrollTo function. Smooth scrolling behavior (native to the browser) is supported by providing ScrollToOptions.
  *

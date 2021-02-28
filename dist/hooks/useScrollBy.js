@@ -24,7 +24,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var React = __importStar(require("react"));
 var smoothscroll_polyfill_1 = __importDefault(require("smoothscroll-polyfill"));
 /**
- * See documentation: [useScrollBy](https://devboldly.github.io/react-use-window-scroll/useScrollBy)
+ * See documentation: [useScrollBy](https://justinmahar.github.io/react-use-window-scroll/useScrollBy)
  *
  * This hook scrolls the page by the specified vertical and horizontal amount by using the Window Web API's Window.scrollBy function.
  * Smooth scrolling behavior (native to the browser) is supported by providing ScrollToOptions.

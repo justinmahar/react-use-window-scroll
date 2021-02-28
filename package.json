@@ -1,9 +1,9 @@
 {
   "name": "react-use-window-scroll",
   "version": "1.0.12",
-  "author": "DevBoldly <devboldly@gmail.com>",
+  "author": "Justin Mahar <contact@justinmahar.com>",
   "description": "React hooks for scrolling the page to any location, or by any amount. Supports smooth scrolling.",
-  "homepage": "https://devboldly.github.io/react-use-window-scroll/",
+  "homepage": "https://justinmahar.github.io/react-use-window-scroll/",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
@@ -28,10 +28,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/devboldly/react-use-window-scroll.git"
+    "url": "git+https://github.com/justinmahar/react-use-window-scroll.git"
   },
   "bugs": {
-    "url": "https://github.com/devboldly/react-use-window-scroll/issues"
+    "url": "https://github.com/justinmahar/react-use-window-scroll/issues"
   },
   "keywords": [],
   "dependencies": {

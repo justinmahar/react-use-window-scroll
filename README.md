@@ -1,5 +1,5 @@
 <h2 align="center">
-  <a href="https://github.com/devboldly/react-use-window-scroll">React Use Window Scroll</a>
+  <a href="https://github.com/justinmahar/react-use-window-scroll">React Use Window Scroll</a>
 </h2>
 <h3 align="center">
   React hooks for scrolling the page to any location, or by any amount.<br/>Supports smooth scrolling.
@@ -8,28 +8,28 @@
   <a href="https://badge.fury.io/js/react-use-window-scroll">
     <img src="https://badge.fury.io/js/react-use-window-scroll.svg" alt="npm Version"/>
   </a>
-  <a href="https://github.com/devboldly/react-use-window-scroll/actions?query=workflow%3ATests">
-    <img src="https://github.com/devboldly/react-use-window-scroll/workflows/Tests/badge.svg" alt="Tests Status"/>
+  <a href="https://github.com/justinmahar/react-use-window-scroll/actions?query=workflow%3ATests">
+    <img src="https://github.com/justinmahar/react-use-window-scroll/workflows/Tests/badge.svg" alt="Tests Status"/>
   </a>
-  <a href="https://github.com/devboldly/react-use-window-scroll/actions?query=workflow%3ADeploy">
-    <img src="https://github.com/devboldly/react-use-window-scroll/workflows/Deploy/badge.svg" alt="Deploy Status"/>
+  <a href="https://github.com/justinmahar/react-use-window-scroll/actions?query=workflow%3ADeploy">
+    <img src="https://github.com/justinmahar/react-use-window-scroll/workflows/Deploy/badge.svg" alt="Deploy Status"/>
   </a>
 </p>
 
 ## Documentation
 
-Read the **[official documentation](https://devboldly.github.io/react-use-window-scroll/)**.
+Read the **[official documentation](https://justinmahar.github.io/react-use-window-scroll/)**.
 
-[![Demo](./src/__docz__/images/demo.gif "Demo")](https://devboldly.github.io/react-use-window-scroll/useScrollTo#hook-example)
+[![Demo](./src/__docz__/images/demo.gif "Demo")](https://justinmahar.github.io/react-use-window-scroll/useScrollTo#hook-example)
 
-👁️ **[Live Demo](https://devboldly.github.io/react-use-window-scroll/useScrollTo#hook-example)**
+👁️ **[Live Demo](https://justinmahar.github.io/react-use-window-scroll/useScrollTo#hook-example)**
 
 ## Overview
 
 This package includes two hooks for scrolling the page to any coordinates, or by any amount. They both use the the [Window Web API](https://developer.mozilla.org/en-US/docs/Web/API/Window)'s scroll functions and support using [ScrollToOptions](https://developer.mozilla.org/en-US/docs/Web/API/ScrollToOptions) for smooth scrolling implemented natively by the browser.
 
-- [useScrollBy](https://devboldly.github.io/react-use-window-scroll/useScrollBy) - Returns a function to scroll the page up or down by any amount, in pixels. Supports smooth scrolling.
-- [useScrollTo](https://devboldly.github.io/react-use-window-scroll/useScrollTo) - Returns a function to scroll the page to any page coordinates, in pixels. Supports smooth scrolling.
+- [useScrollBy](https://justinmahar.github.io/react-use-window-scroll/useScrollBy) - Returns a function to scroll the page up or down by any amount, in pixels. Supports smooth scrolling.
+- [useScrollTo](https://justinmahar.github.io/react-use-window-scroll/useScrollTo) - Returns a function to scroll the page to any page coordinates, in pixels. Supports smooth scrolling.
 
 Click either of those to see a live demo (at bottom of page).
 
@@ -57,8 +57,8 @@ npm i react-use-window-scroll
 ### useScrollBy
 
 ```jsx
-import * as React from 'react';
-import { useScrollBy } from 'react-use-window-scroll';
+import * as React from "react";
+import { useScrollBy } from "react-use-window-scroll";
 
 const HookExample = () => {
   const scrollBy = useScrollBy();
@@ -67,34 +67,40 @@ const HookExample = () => {
       {/* Hard scroll down by 200 pixels */}
       <button onClick={() => scrollBy(200, 0)}>Hard Scroll By 200</button>
       {/* Smooth scroll down by 200 pixels */}
-      <button onClick={() => scrollBy({ top: 200, left: 0, behavior: 'smooth' })}>Smooth Scroll By 200</button>{' '}
-      ...
+      <button
+        onClick={() => scrollBy({ top: 200, left: 0, behavior: "smooth" })}
+      >
+        Smooth Scroll By 200
+      </button> ...
     </div>
   );
 };
 ```
 
-Read full [useScrollBy docs](https://devboldly.github.io/react-use-window-scroll/useScrollBy).
+Read full [useScrollBy docs](https://justinmahar.github.io/react-use-window-scroll/useScrollBy).
 
 ### useScrollTo
 
 ```jsx
-import { useScrollTo } from 'react-use-window-scroll';
+import { useScrollTo } from "react-use-window-scroll";
 
 const HookExample = () => {
   const scrollTo = useScrollTo();
   return (
-    <div style={{ border: 'solid 2px #67788a', padding: '20px' }}>
+    <div style={{ border: "solid 2px #67788a", padding: "20px" }}>
       {/* Hard scroll to the top */}
-      <button onClick={() => scrollTo(0, 0)}>Hard Scroll To Top (0, 0)</button>{' '}
-      {/* Smooth scroll to the top */}
-      <button onClick={() => scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>Smooth Scroll To Top (0, 0)</button>
+      <button onClick={() => scrollTo(0, 0)}>
+        Hard Scroll To Top (0, 0)
+      </button> {/* Smooth scroll to the top */}
+      <button onClick={() => scrollTo({ top: 0, left: 0, behavior: "smooth" })}>
+        Smooth Scroll To Top (0, 0)
+      </button>
     </div>
   );
 };
 ```
 
-Read full [useScrollTo docs](https://devboldly.github.io/react-use-window-scroll/useScrollTo).
+Read full [useScrollTo docs](https://justinmahar.github.io/react-use-window-scroll/useScrollTo).
 
 ## TypeScript
 
@@ -114,9 +120,9 @@ For major changes, open an issue first to discuss what you'd like to change.
 
 See [Kindling](https://tinyurl.com/kindlingscripts) for npm script documentation.
 
-## ⭐ Found It Helpful? [Star It!](https://github.com/devboldly/react-use-window-scroll/stargazers)
+## ⭐ Found It Helpful? [Star It!](https://github.com/justinmahar/react-use-window-scroll/stargazers)
 
-If you found this project helpful, let the community know by giving it a [star](https://github.com/devboldly/react-use-window-scroll/stargazers): [👉⭐](https://github.com/devboldly/react-use-window-scroll/stargazers)
+If you found this project helpful, let the community know by giving it a [star](https://github.com/justinmahar/react-use-window-scroll/stargazers): [👉⭐](https://github.com/justinmahar/react-use-window-scroll/stargazers)
 
 ## Logo Attribution
 
@@ -125,7 +131,7 @@ Logo graphics by [Twemoji](https://github.com/twitter/twemoji), licensed under [
 ## MIT License
 
 ```
-Copyright © 2020 DevBoldly https://devboldly.com
+Copyright © 2020 Justin Mahar https://github.com/justinmahar
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

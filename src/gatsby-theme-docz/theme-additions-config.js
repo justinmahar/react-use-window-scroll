@@ -25,9 +25,9 @@ export const themeAdditionsConfig = {
     /** Set to false to disable the author/"powered by" footer. */
     enabled: true,
     /** Name of project author */
-    authorName: 'DevBoldly',
+    authorName: 'Justin Mahar',
     /** URL to author's page */
-    authorUrl: 'https://devboldly.com/',
+    authorUrl: 'https://github.com/justinmahar/',
     /** Set to true if you're a grumpy person :) */
     hideEmoji: false,
     /** Hide the "Created with <3 by name" author text from footer. */
