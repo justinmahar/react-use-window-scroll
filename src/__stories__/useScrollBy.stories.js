@@ -13,7 +13,7 @@ export default {
 const paragraphCount = 3;
 const paragraphs = Array(paragraphCount)
   .fill(paragraphCount)
-  .map(i => {
+  .map((i) => {
     return (
       <p key={`p${Math.random()}`}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum tortor id eros dignissim vulputate.
