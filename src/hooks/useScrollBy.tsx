@@ -2,7 +2,7 @@ import * as React from 'react';
 import smoothscroll from 'smoothscroll-polyfill';
 
 /**
- * See documentation: [useScrollBy](https://justinmahar.github.io/react-use-window-scroll/useScrollBy)
+ * See documentation: [useScrollBy](https://justinmahar.github.io/react-use-window-scroll/?path=/story/hooks-usescrollby--page)
  *
  * This hook scrolls the page by the specified vertical and horizontal amount by using the Window Web API's Window.scrollBy function.
  * Smooth scrolling behavior (native to the browser) is supported by providing ScrollToOptions.
@@ -16,49 +16,48 @@ export function useScrollBy(options: { polyfillDisabled?: boolean } = {}): Scrol
   const [shouldScroll, setShouldScroll] = React.useState(false);
 
   React.useEffect(() => {
-    if (shouldScroll && !!window) {
+    if (shouldScroll && typeof window !== 'undefined') {
       setShouldScroll(false);
       const scrollToOptionsToUse = {
         ...scrollToOptions,
         top: scrollToOptions.top ? scrollToOptions.top : 0,
         left: scrollToOptions.left ? scrollToOptions.left : 0,
       };
-      if (window.scrollBy) {
-        if (
-          !options.polyfillDisabled &&
-          !!scrollToOptionsToUse.behavior &&
-          scrollToOptionsToUse.behavior === 'smooth'
-        ) {
-          try {
-            // Detect if the smooth scroll behavior is natively supported and take action only when necessary
-            smoothscroll.polyfill();
-          } catch (e) {
-            console.error(e);
-          }
+      if (!options.polyfillDisabled && !!scrollToOptionsToUse.behavior && scrollToOptionsToUse.behavior === 'smooth') {
+        try {
+          // Detect if the smooth scroll behavior is natively supported and take action only when necessary
+          smoothscroll.polyfill();
+        } catch (e) {
+          console.error(e);
         }
+      }
+      if (window.scrollBy) {
         window.scrollBy(scrollToOptionsToUse);
       }
     }
   }, [shouldScroll, scrollToOptions, options.polyfillDisabled]);
 
-  const scrollBy: ScrollBy = (
-    scrollToOptionsOrTop: ScrollToOptions | number = { top: 0, left: 0 },
-    left: number | undefined = undefined,
-  ): void => {
-    if (typeof scrollToOptionsOrTop === 'number' && typeof left === 'number') {
-      const top = scrollToOptionsOrTop;
-      setScrollToOptions({
-        top: top,
-        left: left,
-      });
-      setShouldScroll(true);
-    } else if (typeof scrollToOptionsOrTop !== 'number') {
-      setScrollToOptions(scrollToOptionsOrTop);
-      setShouldScroll(true);
-    } else {
-      console.error('Invalid scroll param(s):', scrollToOptionsOrTop, left);
-    }
-  };
+  const scrollBy: ScrollBy = React.useCallback(
+    (
+      scrollToOptionsOrTop: ScrollToOptions | number = { top: 0, left: 0 },
+      left: number | undefined = undefined,
+    ): void => {
+      if (typeof scrollToOptionsOrTop === 'number' && typeof left === 'number') {
+        const top = scrollToOptionsOrTop;
+        setScrollToOptions({
+          top: top,
+          left: left,
+        });
+        setShouldScroll(true);
+      } else if (typeof scrollToOptionsOrTop !== 'number') {
+        setScrollToOptions(scrollToOptionsOrTop);
+        setShouldScroll(true);
+      } else {
+        console.error('Invalid scroll param(s):', scrollToOptionsOrTop, left);
+      }
+    },
+    [],
+  );
 
   return scrollBy;
 }

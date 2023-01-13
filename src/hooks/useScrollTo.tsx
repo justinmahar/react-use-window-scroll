@@ -2,7 +2,7 @@ import * as React from 'react';
 import smoothscroll from 'smoothscroll-polyfill';
 
 /**
- * See documentation: [useScrollTo](https://justinmahar.github.io/react-use-window-scroll/useScrollTo)
+ * See documentation: [useScrollTo](https://justinmahar.github.io/react-use-window-scroll/?path=/story/hooks-usescrollto--page)
  *
  * This hook scrolls the page to the specified page coordinates using the Window Web API's Window.scrollTo function. Smooth scrolling behavior (native to the browser) is supported by providing ScrollToOptions.
  *
@@ -15,7 +15,7 @@ export function useScrollTo(options: { polyfillDisabled?: boolean } = {}): Scrol
   const [shouldScroll, setShouldScroll] = React.useState(false);
 
   React.useEffect(() => {
-    if (shouldScroll && !!window) {
+    if (shouldScroll && typeof window !== 'undefined') {
       setShouldScroll(false);
       const scrollToOptionsToUse = {
         ...scrollToOptions,
@@ -38,24 +38,27 @@ export function useScrollTo(options: { polyfillDisabled?: boolean } = {}): Scrol
     }
   }, [shouldScroll, scrollToOptions, options.polyfillDisabled]);
 
-  const scrollTo: ScrollTo = (
-    scrollToOptionsOrTop: ScrollToOptions | number = { top: 0, left: 0 },
-    left: number | undefined = undefined,
-  ): void => {
-    if (typeof scrollToOptionsOrTop === 'number' && typeof left === 'number') {
-      const top = scrollToOptionsOrTop;
-      setScrollToOptions({
-        top: top,
-        left: left,
-      });
-      setShouldScroll(true);
-    } else if (typeof scrollToOptionsOrTop !== 'number') {
-      setScrollToOptions(scrollToOptionsOrTop);
-      setShouldScroll(true);
-    } else {
-      console.error('Invalid scroll param(s):', scrollToOptionsOrTop, left);
-    }
-  };
+  const scrollTo: ScrollTo = React.useCallback(
+    (
+      scrollToOptionsOrTop: ScrollToOptions | number = { top: 0, left: 0 },
+      left: number | undefined = undefined,
+    ): void => {
+      if (typeof scrollToOptionsOrTop === 'number' && typeof left === 'number') {
+        const top = scrollToOptionsOrTop;
+        setScrollToOptions({
+          top: top,
+          left: left,
+        });
+        setShouldScroll(true);
+      } else if (typeof scrollToOptionsOrTop !== 'number') {
+        setScrollToOptions(scrollToOptionsOrTop);
+        setShouldScroll(true);
+      } else {
+        console.error('Invalid scroll param(s):', scrollToOptionsOrTop, left);
+      }
+    },
+    [],
+  );
 
   return scrollTo;
 }
