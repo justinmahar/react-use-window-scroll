@@ -19,9 +19,7 @@
 
 Read the **[official documentation](https://justinmahar.github.io/react-use-window-scroll/)**.
 
-[![Demo](https://justinmahar.github.io/react-use-window-scroll/demo.gif "Demo")](https://justinmahar.github.io/react-use-window-scroll/?path=/story/hooks-usescrollto--page#hook-example)
-
-👁️ **[Live Demo](https://justinmahar.github.io/react-use-window-scroll/?path=/story/hooks-usescrollto--page#hook-example)**
+<a href="https://justinmahar.github.io/react-use-window-scroll/?path=/story/hooks-usescrollto--page#hook-example"><img src="https://justinmahar.github.io/react-use-window-scroll/demo.gif" alt="Demo" /></a>
 
 ## Overview
 
