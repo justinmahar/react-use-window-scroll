@@ -2,7 +2,7 @@ import * as React from 'react';
 import smoothscroll from 'smoothscroll-polyfill';
 
 /**
- * See documentation: [useScrollTo](https://justinmahar.github.io/react-use-window-scroll/?path=/story/hooks-usescrollto--page)
+ * See documentation: [useScrollTo](https://justinmahar.github.io/react-use-window-scroll/?path=/story/hooks-usescrollto--docs)
  *
  * This hook scrolls the page to the specified page coordinates using the Window Web API's Window.scrollTo function. Smooth scrolling behavior (native to the browser) is supported by providing ScrollToOptions.
  *

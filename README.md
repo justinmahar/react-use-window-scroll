@@ -19,14 +19,14 @@
 
 Read the **[official documentation](https://justinmahar.github.io/react-use-window-scroll/)**.
 
-<a href="https://justinmahar.github.io/react-use-window-scroll/?path=/story/hooks-usescrollto--page#hook-example"><img src="https://justinmahar.github.io/react-use-window-scroll/demo.gif" alt="Demo" /></a>
+<a href="https://justinmahar.github.io/react-use-window-scroll/?path=/story/hooks-usescrollto--docs#hook-example"><img src="https://justinmahar.github.io/react-use-window-scroll/demo.gif" alt="Demo" /></a>
 
 ## Overview
 
 This package includes two hooks for scrolling the page to any coordinates, or by any amount. They both use the the [Window Web API](https://developer.mozilla.org/en-US/docs/Web/API/Window)'s scroll functions and support using [ScrollToOptions](https://developer.mozilla.org/en-US/docs/Web/API/ScrollToOptions) for smooth scrolling implemented natively by the browser.
 
-- [`useScrollBy`](https://justinmahar.github.io/react-use-window-scroll/?path=/story/hooks-usescrollby--page) - Returns a function to scroll the page up or down by any amount, in pixels. Supports smooth scrolling.
-- [`useScrollTo`](https://justinmahar.github.io/react-use-window-scroll/?path=/story/hooks-usescrollto--page) - Returns a function to scroll the page to any page coordinates, in pixels. Supports smooth scrolling.
+- [`useScrollBy`](https://justinmahar.github.io/react-use-window-scroll/?path=/story/hooks-usescrollby--docs) - Returns a function to scroll the page up or down by any amount, in pixels. Supports smooth scrolling.
+- [`useScrollTo`](https://justinmahar.github.io/react-use-window-scroll/?path=/story/hooks-usescrollto--docs) - Returns a function to scroll the page to any page coordinates, in pixels. Supports smooth scrolling.
 
 Click either of those to see a live demo (at bottom of page).
 
@@ -101,7 +101,7 @@ const HookExample = () => {
 };
 ```
 
-Read full [useScrollBy docs](https://justinmahar.github.io/react-use-window-scroll/?path=/story/hooks-usescrollby--page).
+Read full [useScrollBy docs](https://justinmahar.github.io/react-use-window-scroll/?path=/story/hooks-usescrollby--docs).
 
 ### useScrollTo
 
@@ -124,7 +124,7 @@ const HookExample = () => {
 };
 ```
 
-Read full [useScrollTo docs](https://justinmahar.github.io/react-use-window-scroll/?path=/story/hooks-usescrollto--page).
+Read full [useScrollTo docs](https://justinmahar.github.io/react-use-window-scroll/?path=/story/hooks-usescrollto--docs).
 
 <!-- [lock:typescript] 🚫--------------------------------------- -->
 
@@ -160,4 +160,4 @@ If you found this project helpful, let the community know by giving it a [star](
 
 ## License
 
-See [LICENSE.md](https://justinmahar.github.io/react-use-window-scroll/?path=/story/license--page).
+See [LICENSE.md](https://justinmahar.github.io/react-use-window-scroll/?path=/docs/license--docs).
