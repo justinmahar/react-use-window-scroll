@@ -1,6 +1,6 @@
 {
   "name": "react-use-window-scroll",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "coreVersion": "3.0.9",
   "author": "Justin Mahar <contact@justinmahar.com>",
   "description": "React hooks for scrolling the page to any location, or by any amount. Supports smooth scrolling.",
